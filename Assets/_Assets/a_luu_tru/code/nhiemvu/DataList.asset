@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721844936ccd01340a2124021e201065, type: 3}
+  m_Name: DataList
+  m_EditorClassIdentifier: 
+  databaseList:
+  - anh_img: {fileID: -1772866049, guid: 99e7ea8fe2d505745b27575a71241bff, type: 3}
+    thongtin_txt: nhat duoc10 vang
+    tiendo_txt: 0/10
+    trangthai_bl: 0
+  - anh_img: {fileID: -507756375, guid: ebaa89540e7aade4d9cd14047c433143, type: 3}
+    thongtin_txt: ha duoc 10 con quai
+    tiendo_txt: 0/10
+    trangthai_bl: 0
+  - anh_img: {fileID: -1966015293, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
+    thongtin_txt: tim duoc 20 cay nam
+    tiendo_txt: 0/20
+    trangthai_bl: 0
