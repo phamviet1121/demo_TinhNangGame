@@ -824,7 +824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41badab9bbafd745846ccf9f67c7985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questDatabase_1: {fileID: 0}
+  questDatabase_1: {fileID: 11400000, guid: 2fbaed27da246984dae8cefa74349069, type: 2}
   s: {fileID: 1953297721}
 --- !u!1 &1418439377
 GameObject:
