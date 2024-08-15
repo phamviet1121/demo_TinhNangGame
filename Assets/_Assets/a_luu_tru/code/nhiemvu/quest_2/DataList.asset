@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f4a65554bfc0540a37af6978630856, type: 3}
+  m_Name: DataList
+  m_EditorClassIdentifier: 
+  databaseScripts:
+  - id: 0
+    anh_img: {fileID: -1772866049, guid: 99e7ea8fe2d505745b27575a71241bff, type: 3}
+    thongtin_txt: hfghfghhfghfgh
+    tiendo_txt_thucte: 1
+    tiendo_txt_hoanthanh: 10
+    trangthai_bl: 1
+    trangthai: hianthanh
+  - id: 0
+    anh_img: {fileID: -507756375, guid: ebaa89540e7aade4d9cd14047c433143, type: 3}
+    thongtin_txt: j,jh,j,234324323
+    tiendo_txt_thucte: 2
+    tiendo_txt_hoanthanh: 100
+    trangthai_bl: 0
+    trangthai: claer
+  - id: 0
+    anh_img: {fileID: -507756375, guid: ebaa89540e7aade4d9cd14047c433143, type: 3}
+    thongtin_txt: nhanvat
+    tiendo_txt_thucte: 0
+    tiendo_txt_hoanthanh: 30
+    trangthai_bl: 0
+    trangthai: chuahanthanh
