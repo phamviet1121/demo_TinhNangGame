@@ -1,7 +1,8 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 
 public class questItem : MonoBehaviour
 {
@@ -27,22 +28,27 @@ public class questItem : MonoBehaviour
     {
         if (data == null)
         {
-            Debug.LogWarning("Nh?n d? li?u data_Quest l‡ null.");
+            Debug.LogWarning("Nh?n d? li?u data_Quest l√† null.");
             return;
         }
 
-        // G·n c·c thu?c tÌnh t? data_Quest v‡o c·c th‡nh ph?n UI
-        icon_img.sprite = data.anh_img;
+
+        // Ki·ªÉm tra n·∫øu sprite kh√¥ng ph·∫£i l√† null tr∆∞·ªõc khi g√°n
+        if (data.anh_img != null)
+        {
+            icon_img.sprite = data.anh_img;
+        }
+        else
+        {
+            Debug.LogWarning("D·ªØ li·ªáu DataQuest iconImg l√† null.");
+        }
         thongtin_txtt.text = data.thongtin_txt;
         tiendo_thucte_txt.text = data.tiendo_txt_thucte;
         tiendo_ht_txt.text = data.tiendo_txt_hoanthanh;
 
-        // C?p nh?t Image tiendo n?u c?n, vÌ d?:
-        
-
-        // C?p nh?t tr?ng th·i n˙t n?u c?n
+       
         trangthai_btn.interactable = data.trangthai_bl;
-        trangthai_btn_txt.text = data.trangthai; // N?u data.trangthai l‡ m?t Text, l?y n?i dung c?a nÛ
+        trangthai_btn_txt.text = data.trangthai; 
     }
 }
 

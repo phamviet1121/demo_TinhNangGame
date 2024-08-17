@@ -5,17 +5,15 @@ using UnityEngine;
 public class Save_Quest : MonoBehaviour
 {
     [SerializeField]
-    private data_bace_Quest Data_Bace_Quest;
+    private  data_bace_Quest Data_Bace_Quest;
 
     private List<Quest_Savedata> quest_SavedataList = new List<Quest_Savedata>();
 
     void Start()
     {
-        // Có th? thêm logic kh?i t?o ? ?ây n?u c?n
+        LoadAll();
     }
 
-    // N?u b?n mu?n c?p nh?t quest_SavedataList khi d? li?u quest thay ??i, b?n c?n thêm logic.
-    // B?n có th? s? d?ng m?t ph??ng th?c khác ?? g?i c?p nh?t d? li?u khi c?n thi?t.
 
     [ContextMenu("SaveAll")]
     private void SaveAll()
@@ -32,7 +30,7 @@ public class Save_Quest : MonoBehaviour
                 tiendo_txt_thucte = quest.tiendo_txt_thucte,
                 tiendo_txt_hoanthanh = quest.tiendo_txt_hoanthanh,
                 trangthai_bl = quest.trangthai_bl,
-                trangthai_btn_txt.text = quest.trangthai 
+                trangthai = quest.trangthai
             };
             quest_SavedataList.Add(savedData);
         }
@@ -41,6 +39,11 @@ public class Save_Quest : MonoBehaviour
         string json = JsonUtility.ToJson(new SaveQuestDataList { ListString = quest_SavedataList });
         PlayerPrefs.SetString("quest_SavedataList", json);
         PlayerPrefs.Save();
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveAll();
     }
 
     [ContextMenu("LoadAll")]
@@ -53,7 +56,7 @@ public class Save_Quest : MonoBehaviour
         {
             quest_SavedataList = loadedData.ListString;
 
-            // C?p nh?t d? li?u trong Data_Bace_Quest n?u c?n
+          
             Data_Bace_Quest.DatabaseScripts.Clear();
             foreach (var savedData in quest_SavedataList)
             {
@@ -65,7 +68,7 @@ public class Save_Quest : MonoBehaviour
                     tiendo_txt_thucte = savedData.tiendo_txt_thucte,
                     tiendo_txt_hoanthanh = savedData.tiendo_txt_hoanthanh,
                     trangthai_bl = savedData.trangthai_bl,
-                    trangthai = savedData.trangthai_txt // N?u tr?ng thái là chu?i, n?u không c?n s?a cho phù h?p
+                   trangthai = savedData.trangthai // N?u tr?ng thái là chu?i, n?u không c?n s?a cho phù h?p
                 };
                 Data_Bace_Quest.DatabaseScripts.Add(quest);
             }

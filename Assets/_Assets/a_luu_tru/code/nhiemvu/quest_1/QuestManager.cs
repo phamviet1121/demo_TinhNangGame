@@ -10,7 +10,7 @@ public class QuestManager : MonoBehaviour
 
     GameObject a;
     GameObject b;
-    [SerializeField] Transform s;
+    [SerializeField] public Transform s;
     //[SerializeField] List<QuestDataa> listData; 
     void Start()
     {
