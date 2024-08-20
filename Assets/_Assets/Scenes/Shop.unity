@@ -473,10 +473,10 @@ RectTransform:
   - {fileID: 1777525706}
   m_Father: {fileID: 1722921621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 496.0384, y: -130.45}
-  m_SizeDelta: {x: 235.45, y: 260.9}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459509387
 MonoBehaviour:
@@ -770,13 +770,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShopItemLiist:
   - anh: {fileID: -1772866049, guid: 99e7ea8fe2d505745b27575a71241bff, type: 3}
-    Price: 140121
-    Abuy: 0
-  - anh: {fileID: -997137901, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
-    Price: 543543543
-    Abuy: 0
+    Price: 12
+    Abuy: 1
   - anh: {fileID: -507756375, guid: ebaa89540e7aade4d9cd14047c433143, type: 3}
-    Price: 53334
+    Price: 13
+    Abuy: 0
+  - anh: {fileID: -1966015293, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
+    Price: 15
     Abuy: 0
   s: {fileID: 1722921621}
 --- !u!114 &974484830

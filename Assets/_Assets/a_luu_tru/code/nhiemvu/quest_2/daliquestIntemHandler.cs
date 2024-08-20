@@ -6,20 +6,20 @@ public class daliquestIntemHandler : MonoBehaviour
 {
     // Tham chiếu đến dữ liệu của nhiệm vụ
     public data_Quest Data_Quest;
-    //public Quest_Savedata quest_Savedata;
+    public Quest_Savedata quest_Savedata;
 
-    //// Các thành phần UI
-    //public Text tiendo_thucte_txt;
-    //public Image tiendo_img;  // Biến này chưa được sử dụng trong mã hiện tại nhưng giữ lại để đầy đủ
-    //public Button trangthai_btn;
-    //public Text trangthai_btn_txt;
+    // Các thành phần UI
+    public Text tiendo_thucte_txt;
+    public Image tiendo_img;  // Biến này chưa được sử dụng trong mã hiện tại nhưng giữ lại để đầy đủ
+    public Button trangthai_btn;
+    public Text trangthai_btn_txt;
 
     // Phương thức để thiết lập dữ liệu nhiệm vụ
-    internal void SetData(data_Quest dataQuest/* ,Quest_Savedata quest_Savedata*/)
+    internal void SetData(data_Quest dataQuest/*, Quest_Savedata quest_Savedata*/)
     {
         this.Data_Quest = dataQuest;
-       //this.quest_Savedata = quest_Savedata;
-       // UpdateUI();
+        //this.quest_Savedata = quest_Savedata;
+        //UpdateUI();
     }
 
     //// Phương thức để cập nhật UI dựa trên dữ liệu nhiệm vụ
@@ -48,7 +48,7 @@ public class daliquestIntemHandler : MonoBehaviour
     //    }
     //}
 
-    //// Phương thức xử lý sự kiện nhấn nút
+    // Phương thức xử lý sự kiện nhấn nút
     //void OnButtonClick()
     //{
     //    if (Data_Quest != null)

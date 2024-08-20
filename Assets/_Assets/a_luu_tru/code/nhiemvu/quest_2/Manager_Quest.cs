@@ -20,15 +20,20 @@ public class Manager_Quest : MonoBehaviour
 
         foreach (var questdata in databaseScripts_1.DatabaseScripts)
         {
-            //Quest_Savedata questSavedata = Quest_Savedata GetQuestSavedata(int questId);
+        //    Quest_Savedata questSavedata = Save_Quest.quest_SavedataList.Find(quest_SavedataList);
             CreatQuest(questdata);
             QuestItem.Setdata(questdata);
 
         }
     }
     void Update()
-    {      
-        
+    {
+        //foreach (var questdata in databaseScripts_1.DatabaseScripts)
+        //{
+            
+        //    QuestItem.Setdata(questdata);
+
+        //}
     }
 
     private void CreatQuest(data_Quest Data_Questt /*, Quest_Savedata quest_Savedata*/)

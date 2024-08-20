@@ -18,15 +18,15 @@ MonoBehaviour:
     thongtin_txt: hfghfghhfghfgh
     tiendo_txt_thucte: 10
     tiendo_txt_hoanthanh: 10
-    trangthai_bl: 0
-    trangthai: "\u0111\xE3 ho\xE0n th\xE0nh"
+    trangthai_bl: 1
+    trangthai: 'da hoan thanh roi '
   - id: 1
     anh_img: {fileID: 160191808, guid: 99e7ea8fe2d505745b27575a71241bff, type: 3}
     thongtin_txt: j,jh,j,234324323
     tiendo_txt_thucte: 100
     tiendo_txt_hoanthanh: 100
-    trangthai_bl: 0
-    trangthai: claer
+    trangthai_bl: 1
+    trangthai: 'da hoan thanh roi '
   - id: 2
     anh_img: {fileID: -1966015293, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
     thongtin_txt: nhanvat
