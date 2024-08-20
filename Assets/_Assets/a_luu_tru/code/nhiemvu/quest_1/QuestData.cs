@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class QuestDataa
 {
-
+    public int id;
     public Sprite anh_img;
     public string thongtin_txt;
     public string tiendo_txt;

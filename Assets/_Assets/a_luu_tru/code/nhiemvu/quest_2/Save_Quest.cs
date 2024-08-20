@@ -7,7 +7,7 @@ public class Save_Quest : MonoBehaviour
     [SerializeField]
     private  data_bace_Quest Data_Bace_Quest;
 
-    private List<Quest_Savedata> quest_SavedataList = new List<Quest_Savedata>();
+    public List<Quest_Savedata> quest_SavedataList = new List<Quest_Savedata>();
 
     void Start()
     {
@@ -80,4 +80,16 @@ public class Save_Quest : MonoBehaviour
     {
         public List<Quest_Savedata> ListString;
     }
+
+
+
+
+
+
+
+
+
+
+
+
 }

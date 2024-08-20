@@ -7,8 +7,20 @@ public class questDatabace : ScriptableObject
 {
     //List<QuestDataa> databaceList;
     [SerializeField]
-    private List<QuestDataa> databaseList = new List<QuestDataa>();
+    public List<QuestDataa> DatabaseList;
+}
 
-    public List<QuestDataa> DatabaseList => databaseList;
+
+[SerializeField]
+public class QuestProgress
+{
+    public int id;
+    public string progresss;
+    public bool isComleted;
+
+}
+public class QuestProgressData
+{
+    public List<QuestProgress> questProgress;
 }
 

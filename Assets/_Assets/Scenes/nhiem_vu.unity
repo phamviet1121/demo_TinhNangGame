@@ -480,32 +480,36 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b8bad9ffa39849d42afe2020effa4efc, type: 2}
     - target: {fileID: 2427624101546914771, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2427624101546914771, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2427624101546914771, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 950
       objectReference: {fileID: 0}
     - target: {fileID: 2427624101546914771, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 105.6
       objectReference: {fileID: 0}
     - target: {fileID: 2427624101546914771, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 488
       objectReference: {fileID: 0}
     - target: {fileID: 2427624101546914771, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -52.8
       objectReference: {fileID: 0}
     - target: {fileID: 3699419283802584203, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: icon_img
       value: 
       objectReference: {fileID: 1202285555}
+    - target: {fileID: 3699419283802584203, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
+      propertyPath: Data_bace_Quest
+      value: 
+      objectReference: {fileID: 11400000, guid: b8bad9ffa39849d42afe2020effa4efc, type: 2}
     - target: {fileID: 4740771664759587388, guid: 76bc8ac743204de41adbd4c58e174818, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -773,8 +777,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f55c2897a74b3b4d8f8d8635eb49e05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 574009365}
-  test_btn: {fileID: 1610813061}
+  Data_bace_Quest: {fileID: 0}
+  trangthai_btn: {fileID: 0}
+  trangthai_btn_txt: {fileID: 0}
 --- !u!114 &574009365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,19 +823,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 574009366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 574009364}
-        m_TargetAssemblyTypeName: click_button, Assembly-CSharp
-        m_MethodName: OnStatusButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &574009366
 MonoBehaviour:
   m_ObjectHideFlags: 0

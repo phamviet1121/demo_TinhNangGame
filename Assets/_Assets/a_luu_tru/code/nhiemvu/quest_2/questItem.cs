@@ -47,7 +47,9 @@ public class questItem : MonoBehaviour
         {
             Debug.LogWarning("Dữ liệu DataQuest iconImg là null.");
         }
+        Debug.Log($"{data.id}");
         thongtin_txtt.text = data.thongtin_txt;
+        Debug.Log($"{data.thongtin_txt}");
 
         tiendo_ht_txt.text = data.tiendo_txt_hoanthanh;
 
@@ -88,17 +90,17 @@ public class questItem : MonoBehaviour
         
 
         Debug.Log($"vua chay ham OnStatusButtonClick voi text: {trangthai_btn_txt.text}");
-        foreach (var data in Data_bace_Quest.DatabaseScripts)
-        {
-            if (data.id == id)
-            {
-                data.trangthai = "da nhan";
-                data.trangthai_bl = false;
-                trangthai_btn_txt.text = data.trangthai;
-                Debug.Log($"sau khi tuc hien ham OnStatusButtonClick: {data.trangthai}");
-            }
+        //foreach (var data in Data_bace_Quest.DatabaseScripts)
+        //{
+        //    if (data.id == id)
+        //    {
+        //        data.trangthai = "da nhan";
+        //        data.trangthai_bl = false;
+        //        trangthai_btn_txt.text = data.trangthai;
+        //        Debug.Log($"sau khi tuc hien ham OnStatusButtonClick: {data.trangthai}");
+        //    }
 
-        }
+        //}
 
     }
 }
