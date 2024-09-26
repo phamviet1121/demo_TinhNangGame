@@ -17,7 +17,7 @@ public class click_button : MonoBehaviour
     public Dictionary<string, string> trangthai_btn_dict;
     void Start()
     {
-        trangthai_btn.onClick.AddListener(OnStatusButtonClick);
+        trangthai_nhiemvu();
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class click_button : MonoBehaviour
             {
                 data.trangthai_bl = true;
                 trangthai_btn.interactable = data.trangthai_bl;
-                data.trangthai = "da hoan thanh";
+                data.trangthai = "da hoan thanh roi do";
                 trangthai_btn_txt.text = data.trangthai;
                 trangthai_btn.onClick.AddListener(OnStatusButtonClick);
             }

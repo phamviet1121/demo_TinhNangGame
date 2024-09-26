@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 1218064328}
   - component: {fileID: 1218064330}
   - component: {fileID: 1218064329}
-  - component: {fileID: 1218064331}
+  - component: {fileID: 1218064333}
   m_Layer: 5
   m_Name: bang_nhiem_vu
   m_TagString: Untagged
@@ -812,7 +812,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218064327}
   m_CullTransparentMesh: 1
---- !u!114 &1218064331
+--- !u!114 &1218064333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -821,11 +821,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1218064327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41badab9bbafd745846ccf9f67c7985, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f49620944723064fb2ca1a4990a8285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questDatabase_1: {fileID: 11400000, guid: 2fbaed27da246984dae8cefa74349069, type: 2}
-  s: {fileID: 1953297721}
+  QuestDatabace: {fileID: 11400000, guid: 2fbaed27da246984dae8cefa74349069, type: 2}
+  DailyQuestItemHandler: {fileID: 1953297724}
+  rootContentOnUI: {fileID: 1722535086}
 --- !u!1 &1418439377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1338,7 @@ GameObject:
   - component: {fileID: 1953297721}
   - component: {fileID: 1953297722}
   - component: {fileID: 1953297723}
+  - component: {fileID: 1953297724}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1402,6 +1404,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &1953297724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953297720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73df8f470ecd61548b0f69568c4d612b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questDataa:
+    id: 0
+    anh_img: {fileID: 0}
+    thongtin_txt: 
+    tendo_txt: 
+    trangthai_btn: 0
+    trangthai_btn_txt: 
+  icomHandler: {fileID: 534830781}
+  thongtin_text: {fileID: 1546111497}
+  tiendo_text: {fileID: 798855989}
+  trangthai_button: {fileID: 1518826564}
+  trangthai_button_text: {fileID: 443313099}
 --- !u!1 &2115761338
 GameObject:
   m_ObjectHideFlags: 0

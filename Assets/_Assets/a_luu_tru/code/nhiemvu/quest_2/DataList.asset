@@ -13,24 +13,31 @@ MonoBehaviour:
   m_Name: DataList
   m_EditorClassIdentifier: 
   databaseScripts:
-  - id: 1
-    anh_img: {fileID: -1772866049, guid: 99e7ea8fe2d505745b27575a71241bff, type: 3}
-    thongtin_txt: chay 10
-    tiendo_txt_thucte: 10
-    tiendo_txt_hoanthanh: 10
-    trangthai_bl: 1
-    trangthai: 'da hoan thanh roi '
-  - id: 2
-    anh_img: {fileID: -507756375, guid: ebaa89540e7aade4d9cd14047c433143, type: 3}
-    thongtin_txt: danh dc
-    tiendo_txt_thucte: 0
-    tiendo_txt_hoanthanh: 100
-    trangthai_bl: 0
-    trangthai: chua hoan thanh
-  - id: 3
-    anh_img: {fileID: -1966015293, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
-    thongtin_txt: nhat 100
+  - id: 0
+    anh_img: {fileID: 935327813, guid: e5b0af577fd36cb499998267f4e9d412, type: 3}
+    thongtin_txt: 'DANH QUAI VAT '
     tiendo_txt_thucte: 6
+    tiendo_txt_hoanthanh: 10
+    trangthai_bl: 0
+    trangthai: CHUA HOAN THANH
+  - id: 1
+    anh_img: {fileID: 21300000, guid: 8bfadec067237c04ab16144f6847e733, type: 3}
+    thongtin_txt: j,jh,j,234324323
+    tiendo_txt_thucte: 10
     tiendo_txt_hoanthanh: 100
     trangthai_bl: 0
-    trangthai: chua hoan thanh
+    trangthai: chua nhan
+  - id: 2
+    anh_img: {fileID: 21300020, guid: addd2af175d074643a3b1f29f6c23041, type: 3}
+    thongtin_txt: nhanvat
+    tiendo_txt_thucte: 60
+    tiendo_txt_hoanthanh: 60
+    trangthai_bl: 0
+    trangthai: da nhan
+  - id: 3
+    anh_img: {fileID: 21300000, guid: 24726326f0d24dc41875ec34f94e95b2, type: 3}
+    thongtin_txt: "\u0111\xE1nh b\u1EA1i 10 qu\xE1i v\u1EADt"
+    tiendo_txt_thucte: 90
+    tiendo_txt_hoanthanh: 90
+    trangthai_bl: 0
+    trangthai: da nhan

@@ -6,55 +6,88 @@ using UnityEngine.UI;
 public class Update_quest : MonoBehaviour
 {
     public data_bace_Quest Data_bace_Quest;
+    private Save_Quest save_Quest;
 
     public Text tiendo_thucte_txt;
-    public Image tiendo_img;
+
     public Button trangthai_btn;
     public Text trangthai_btn_txt;
     bool buy;
+    public Button capnhat;
+
+    public Text idd;
+    public Text giachi;
+    public Text trnagthaicuanut;
+
+
 
     private void Update()
     {
-        UpdateUI();
+
+    }
+    private void Start()
+    {
     }
 
-    private void UpdateUI()
+    public void onclickbutton()
     {
+        string m= giachi.ToString();
+
+        string n = trnagthaicuanut.ToString();
+        int p = int.Parse(idd.ToString());
+        UpdateUI(p,m, n);
+    }
+
+    private void UpdateUI(int idd, string a,string b)
+    {
+        Debug.Log("co chay");
+
+
+
         foreach (var data in Data_bace_Quest.DatabaseScripts)
         {
-            int id = data.id;
-            tiendo_thucte_txt.text = data.tiendo_txt_thucte;
-
-            if (data.tiendo_txt_thucte == data.tiendo_txt_hoanthanh && buy == true)
+            if(data.id == idd)
             {
-                data.trangthai_bl = true;
-                trangthai_btn.interactable = data.trangthai_bl;
-
-                data.trangthai = "đã hoàn thành";
+                data.tiendo_txt_thucte = a;
+                data.trangthai = b;
+                tiendo_thucte_txt.text = data.tiendo_txt_thucte;
                 trangthai_btn_txt.text = data.trangthai;
-
-                trangthai_btn.AddEventListener(id, OnStatusButtonClick);
-
             }
+
+            //int id = data.id;
+            //tiendo_thucte_txt.text = data.tiendo_txt_thucte;
+
+            //if (data.tiendo_txt_thucte == data.tiendo_txt_hoanthanh && buy == true)
+            //{
+            //    data.trangthai_bl = true;
+            //    trangthai_btn.interactable = data.trangthai_bl;
+
+            //    data.trangthai = "đã hoàn thành";
+            //    trangthai_btn_txt.text = data.trangthai;
+
+            //    trangthai_btn.AddEventListener(id, OnStatusButtonClick);
+
+            //}
 
 
         }
 
-
+        save_Quest.SaveAll();
+        save_Quest.LoadAll();
     }
-    private void OnStatusButtonClick(int id)
-    {
-        foreach (var data in Data_bace_Quest.DatabaseScripts)
-        {
-            if (data.id == id)
-            {
-                data.trangthai = "da nhan";
-                trangthai_btn_txt.text = data.trangthai;
-            }
+    //private void OnStatusButtonClick(int id)
+    //{
+    //    foreach (var data in Data_bace_Quest.DatabaseScripts)
+    //    {
+    //        if (data.id == id)
+    //        {
+    //            data.trangthai = "da nhan";
+    //            trangthai_btn_txt.text = data.trangthai;
+    //        }
 
-        }
+    //    }
 
-    }
+    //}
 
 
 

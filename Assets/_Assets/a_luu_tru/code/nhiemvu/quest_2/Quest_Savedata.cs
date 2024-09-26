@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,3 +13,9 @@ public class Quest_Savedata
     public bool trangthai_bl;
     public string trangthai;
 }
+//[System.Serializable]
+
+//public class SaveQuestDataList
+//{
+//    public List<Quest_Savedata> ListString;
+//}

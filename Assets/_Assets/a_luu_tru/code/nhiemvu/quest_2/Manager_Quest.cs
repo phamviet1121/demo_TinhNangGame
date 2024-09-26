@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,37 +8,49 @@ public class Manager_Quest : MonoBehaviour
 {
 
 
-    //[SerializeField]
-    //public data_bace_Quest databaseScripts_1;
-    //public daliquestIntemHandler DaliquestIntemHandler;
-    //public Transform rootUI;
-    //public questItem QuestItem;
+    [SerializeField]
+    public data_bace_Quest databaseScripts_1;
+    public daliquestIntemHandler DaliquestIntemHandler;
+    public Transform rootUI;
+    public questItem QuestItem;
+    public Save_Quest save_Quest;
 
 
-    //private void Start()
+
+    private void Start()
+    {
+
+        foreach (var questdata in databaseScripts_1.DatabaseScripts)
+        {
+           
+            CreatQuest(questdata);
+            QuestItem.Setdata(questdata);
+
+        }
+    }
+    void Update()
+    {
+       
+    }
+
+    private void CreatQuest(data_Quest Data_Questt)
+    {
+        var quest = Instantiate(DaliquestIntemHandler, rootUI);
+        quest.SetData(Data_Questt);
+    }
+    //[ContextMenu("updateUI")]
+    //private void updateUI()
     //{
+    //    Debug.Log("co chay ko");
 
     //    foreach (var questdata in databaseScripts_1.DatabaseScripts)
     //    {
-    //        //Quest_Savedata questSavedata = Save_Quest.quest_SavedataList.Find(questSavedata=> questSavedata.id == questdata.id);
-    //        CreatQuest(questdata, questSavedata);
+
+
     //        QuestItem.Setdata(questdata);
 
     //    }
     //}
-    //void Update()
-    //{
-    //    //foreach (var questdata in databaseScripts_1.DatabaseScripts)
-    //    //{
-            
-    //    //    QuestItem.Setdata(questdata);
+   
 
-    //    //}
-    //}
-
-    //private void CreatQuest(data_Quest Data_Questt, Quest_Savedata quest_Savedata)
-    //{
-    //    var quest = Instantiate(DaliquestIntemHandler, rootUI);
-    //    quest.SetData(Data_Questt, quest_Savedata);
-    //}
 }

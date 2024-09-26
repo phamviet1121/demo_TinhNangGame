@@ -12,28 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721844936ccd01340a2124021e201065, type: 3}
   m_Name: DataList
   m_EditorClassIdentifier: 
-  databaseList:
-  - anh_img: {fileID: -1772866049, guid: 99e7ea8fe2d505745b27575a71241bff, type: 3}
-    thongtin_txt: nhat duoc20 vang
-    tiendo_txt: 0/20
-    trangthai_bl: 0
-  - anh_img: {fileID: -507756375, guid: ebaa89540e7aade4d9cd14047c433143, type: 3}
-    thongtin_txt: ha duoc 10 con quai
-    tiendo_txt: 0/10
-    trangthai_bl: 0
-  - anh_img: {fileID: -1966015293, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
-    thongtin_txt: tim duoc 20 cay nam
-    tiendo_txt: 0/20
-    trangthai_bl: 0
-  - anh_img: {fileID: 1837282071, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
-    thongtin_txt: tim duoc 20 cay nam
-    tiendo_txt: 0/20
-    trangthai_bl: 0
-  - anh_img: {fileID: -805925580, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
-    thongtin_txt: tim duoc 20 cay nam
-    tiendo_txt: 0/20
-    trangthai_bl: 0
-  - anh_img: {fileID: -1966015293, guid: 2da0db5b1aafb33448b8356ea36ae926, type: 3}
-    thongtin_txt: tim duoc 20 cay nam
-    tiendo_txt: 0/20
-    trangthai_bl: 0
+  DatabaseList:
+  - id: 0
+    anh_img: {fileID: 21300000, guid: a8166ea434d337349818825bff42d2f6, type: 3}
+    thongtin_txt: 
+    tendo_txt: 
+    trangthai_btn: 0
+    trangthai_btn_txt: 
+  - id: 1
+    anh_img: {fileID: 0}
+    thongtin_txt: 
+    tendo_txt: 
+    trangthai_btn: 0
+    trangthai_btn_txt: 
+  - id: 2
+    anh_img: {fileID: 0}
+    thongtin_txt: 
+    tendo_txt: 
+    trangthai_btn: 0
+    trangthai_btn_txt: 

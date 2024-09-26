@@ -6,7 +6,7 @@ public class Save_Quest : MonoBehaviour
 {
     [SerializeField]
     private  data_bace_Quest Data_Bace_Quest;
-
+    [SerializeField]
     public List<Quest_Savedata> quest_SavedataList = new List<Quest_Savedata>();
 
     void Start()
@@ -16,7 +16,7 @@ public class Save_Quest : MonoBehaviour
 
 
     [ContextMenu("SaveAll")]
-    private void SaveAll()
+    public void SaveAll()
     {
         // Chuy?n ??i d? li?u quest thành Quest_Savedata
         quest_SavedataList.Clear();
@@ -47,7 +47,7 @@ public class Save_Quest : MonoBehaviour
     }
 
     [ContextMenu("LoadAll")]
-    private void LoadAll()
+    public void LoadAll()
     {
         string json = PlayerPrefs.GetString("quest_SavedataList", "{}");
         SaveQuestDataList loadedData = JsonUtility.FromJson<SaveQuestDataList>(json);
@@ -76,7 +76,7 @@ public class Save_Quest : MonoBehaviour
     }
 
     [Serializable]
-    private class SaveQuestDataList
+    public class SaveQuestDataList
     {
         public List<Quest_Savedata> ListString;
     }

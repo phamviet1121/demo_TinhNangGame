@@ -64,9 +64,10 @@ public class questItem : MonoBehaviour
             data.trangthai = "da hoan thanh roi ";
             trangthai_btn_txt.text = data.trangthai;
 
-            //trangthai_btn.onClick.AddListener(OnStatusButtonClick);
 
-            trangthai_btn.AddEventListener(data.id, OnStatusButtonClick);
+            trangthai_btn.onClick.AddListener(() => OnStatusButtonClick(data.id));
+            //trangthai_btn.AddEventListener(data.id, OnStatusButtonClick);
+            //trangthai_btn.onClick.AddListener(OnStatusButtonClick);
             Debug.Log($"{data.id}");
             
         }
@@ -86,22 +87,29 @@ public class questItem : MonoBehaviour
     }
     public void OnStatusButtonClick(int id)
     {
-        //trangthai_btn_txt.text = "da nhan";
-        
+        Debug.Log($"Đã chạy hàm OnStatusButtonClick với id: {id}");
 
-        Debug.Log($"vua chay ham OnStatusButtonClick voi text: {trangthai_btn_txt.text}");
-        //foreach (var data in Data_bace_Quest.DatabaseScripts)
-        //{
-        //    if (data.id == id)
-        //    {
-        //        data.trangthai = "da nhan";
-        //        data.trangthai_bl = false;
-        //        trangthai_btn_txt.text = data.trangthai;
-        //        Debug.Log($"sau khi tuc hien ham OnStatusButtonClick: {data.trangthai}");
-        //    }
+        // Tìm đối tượng trong danh sách DatabaseScripts theo ID
+        var data = Data_bace_Quest.DatabaseScripts.Find(d => d.id == id);
 
-        //}
+        if (data != null)
+        {
+            // Cập nhật trạng thái của đối tượng
+            data.trangthai = "da nhan";
+            data.trangthai_bl = false;
 
+            // Cập nhật giao diện người dùng tương ứng
+            trangthai_btn_txt.text = data.trangthai;
+            trangthai_btn.interactable = data.trangthai_bl;
+
+            Debug.Log($"Sau khi thực hiện OnStatusButtonClick: {data.trangthai}");
+        }
+        else
+        {
+            Debug.LogWarning($"Không tìm thấy dữ liệu với id: {id}");
+        }
     }
+
 }
+
 
